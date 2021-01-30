@@ -1,0 +1,11 @@
+--1、首先上传到文件
+--2、文件所在的目录权限设置成777
+--3、在hive中运行一下示例代码
+create table ghy_usr5.tt(ip varchar(30), vin varchar(30), ymd varchar(30)) row format delimited fields terminated by ',';
+load data  inpath '/user/ghy-public/chang.yanpeng/tt.csv'  into table ghy_usr5.tt;
+
+
+
+
+
+
