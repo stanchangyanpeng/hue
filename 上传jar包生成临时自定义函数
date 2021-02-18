@@ -1,0 +1,6 @@
+1、自定义函数代码
+2、将程序jar包上传至服务器，并在hive中创建临时函数
+3、
+addjar /opt/cloudera/parcels/CDH/lib/hive/lib/change.jar;
+create temporary function change as 'cn.baihe.wzq.change.Change';
+4、调用自定义函数
